@@ -1,0 +1,9 @@
+{
+  "name": "max-portfolio-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix max-portfolio run dev",
+    "preview": "npm --prefix max-portfolio run preview",
+    "check": "npm --prefix max-portfolio run check"
+  }
+}

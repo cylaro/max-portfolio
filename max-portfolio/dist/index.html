@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#08090d" />
+    <meta
+      name="description"
+      content="I'm Max. I build websites and Telegram bots. Tell me what you have in mind."
+    />
+    <title>Max / Websites & Telegram bots</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link
+      rel="preload"
+      href="./fonts/golos-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/unbounded-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="header">
+      <a class="logo" href="#" aria-label="Max / Home">m<span>×</span></a>
+      <nav
+        class="desktop-nav"
+        aria-label="Main navigation"
+        data-i18n-aria="navigation"
+      >
+        <a href="#work" data-i18n="navWork">Work</a
+        ><a href="#about" data-i18n="navAbout">About</a
+        ><a href="#contact" data-i18n="navContact">Get in touch</a>
+      </nav>
+      <div class="header-right">
+        <div class="languages" aria-label="Language" data-i18n-aria="language">
+          <button data-language="en" aria-pressed="true">EN</button
+          ><span>/</span
+          ><button data-language="ru" aria-pressed="false">RU</button>
+        </div>
+        <button
+          class="motion-toggle"
+          aria-label="Pause animations"
+          data-i18n-aria="pause"
+          aria-pressed="false"
+        >
+          <span></span><span></span></button
+        ><button
+          class="menu-toggle"
+          aria-label="Open menu"
+          data-i18n-aria="openMenu"
+          aria-controls="mobile-nav"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <nav
+      id="mobile-nav"
+      class="mobile-nav"
+      aria-label="Mobile navigation"
+      data-i18n-aria="mobileNav"
+      hidden
+    >
+      <a href="#work" data-i18n="navWork">Work</a
+      ><a href="#about" data-i18n="navAbout">About</a
+      ><a href="#contact" data-i18n="navContact">Get in touch</a
+      ><a href="https://t.me/cylaro" target="_blank" rel="noopener">@cylaro</a>
+    </nav>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-meta">
+          <span data-i18n="heroRole">Independent developer</span
+          ><span class="hero-index" aria-hidden="true"
+            >Digital / personal / 2026</span
+          >
+        </div>
+        <div class="hero-main">
+          <h1 id="hero-title" aria-label="Max — websites and Telegram bots">
+            <span class="hero-letter">M</span><span class="hero-letter">A</span
+            ><span class="hero-letter">X</span
+            ><span class="hero-period">.</span>
+          </h1>
+          <div class="hero-scene" aria-hidden="true">
+            <div class="scene-halo"></div>
+            <canvas id="sculpture"></canvas>
+          </div>
+          <div class="scene-label">
+            <span class="crosshair" aria-hidden="true">+</span
+            ><span data-i18n="sceneNote"
+              >Web & Telegram.<br />Design & development.</span
+            >
+          </div>
+          <span class="scene-coordinate" aria-hidden="true">[ x, y, z ]</span>
+        </div>
+        <div class="hero-bottom">
+          <div class="hero-intro">
+            <span class="intro-line" data-i18n="heroHello">Hey, I'm Max.</span>
+            <h2>
+              <span data-i18n="heroWeb">I build websites.</span><br /><span
+                data-i18n="heroBots"
+                >And Telegram bots.</span
+              >
+            </h2>
+          </div>
+          <div class="hero-description">
+            <p data-i18n="heroDescription">
+              Tell me what you need. I'll design it, build it, and put it
+              online.
+            </p>
+            <a
+              class="pill-link magnetic"
+              href="https://t.me/cylaro"
+              target="_blank"
+              rel="noopener"
+              ><span data-i18n="talk">Let's talk</span
+              ><span class="link-symbol" aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div class="hero-footer">
+          <span
+            ><i class="availability-dot"></i
+            ><span data-i18n="availability">Taking on new projects</span></span
+          ><a href="#work" class="scroll-link"
+            ><span data-i18n="scroll">Have a look around</span
+            ><span aria-hidden="true">↓</span></a
+          ><span class="hero-coordinates" aria-hidden="true">01 — 06</span>
+        </div>
+      </section>
+      <div class="marquee-clip" aria-hidden="true">
+        <div class="marquee">
+          <div class="marquee-track">
+            <span>Websites</span><i>✳</i><span>Telegram bots</span><i>✳</i
+            ><span>Design & code</span><i>✳</i><span>Websites</span><i>✳</i
+            ><span>Telegram bots</span><i>✳</i><span>Design & code</span
+            ><i>✳</i>
+          </div>
+        </div>
+      </div>
+      <section class="work section" id="work" aria-labelledby="work-title">
+        <div class="section-head">
+          <h2 class="reveal-heading" id="work-title">
+            <span data-i18n="workTitle">A few directions.</span>
+          </h2>
+          <p data-i18n="workIntro">
+            Three self-initiated concepts.<br />Different problems, different
+            answers.
+          </p>
+        </div>
+        <div class="work-grid">
+          <button
+            class="project project-forma reveal"
+            data-project="forma"
+            aria-label="Explore FORMA concept"
+            data-i18n-aria="formaAria"
+          >
+            <div class="project-visual forma-visual">
+              <div class="mock-header">
+                <b>f<span>®</span></b
+                ><span>Independent design practice</span
+                ><span class="mock-plus">+</span>
+              </div>
+              <div class="forma-display">
+                <span>FORM</span><span>& FEEL.</span>
+              </div>
+              <div class="forma-pattern" aria-hidden="true">
+                <span></span><span></span><span></span><span></span
+                ><span></span>
+              </div>
+              <div class="mock-bottom">
+                <span>Spaces. Objects. Ideas.</span><span>Est. 2026</span>
+              </div>
+              <span class="project-view" data-i18n="view">Explore</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>FORMA®</h3>
+                <p data-i18n="formaSubtitle">A website for a design studio</p>
+              </div>
+              <span data-i18n="website">Website</span>
+            </div>
+          </button>
+          <button
+            class="project project-flow reveal"
+            data-project="flow"
+            aria-label="Explore FLOW concept"
+            data-i18n-aria="flowAria"
+          >
+            <div class="project-visual flow-visual">
+              <div class="flow-heading">flow<span>✳</span></div>
+              <span class="flow-top" data-i18n="flowTop"
+                >Your calendar.<br />One chat away.</span
+              >
+              <div class="phone">
+                <div class="phone-camera"></div>
+                <div class="phone-top">
+                  <span class="phone-avatar">f</span>
+                  <div><b>Flow</b><span data-i18n="bot">bot</span></div>
+                  <span>···</span>
+                </div>
+                <div class="phone-date" data-i18n="today">Today</div>
+                <div class="bubble" data-i18n="previewOne">
+                  Hey! When works for you?
+                </div>
+                <div class="bubble own" data-i18n="previewTwo">
+                  Friday, around 2.
+                </div>
+                <div class="bubble" data-i18n="previewThree">
+                  2 pm it is. I'll remind you.
+                </div>
+                <div class="phone-buttons">
+                  <span data-i18n="appointments">My bookings</span
+                  ><span data-i18n="reschedule">Reschedule</span>
+                </div>
+                <div class="phone-input">
+                  <span data-i18n="message">Message</span><span>+</span>
+                </div>
+              </div>
+              <span class="flow-decoration" aria-hidden="true">↗</span
+              ><span class="project-view" data-i18n="view">Explore</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>FLOW</h3>
+                <p data-i18n="flowSubtitle">
+                  Booking, without the back-and-forth
+                </p>
+              </div>
+              <span data-i18n="telegramBot">Telegram bot</span>
+            </div>
+          </button>
+          <button
+            class="project project-mono reveal"
+            data-project="mono"
+            aria-label="Explore MONO concept"
+            data-i18n-aria="monoAria"
+          >
+            <div class="project-visual mono-visual">
+              <div class="mock-header">
+                <b>mono.</b><span>Small collection. Good things.</span
+                ><span>Bag / 0</span>
+              </div>
+              <div class="mono-display">
+                <span>KEEP</span><span>THE GOOD.</span>
+              </div>
+              <div class="mono-orbit" aria-hidden="true">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <span class="mono-note">Less browsing.<br />Better finding.</span>
+              <div class="mock-bottom">
+                <span>Objects for everyday.</span
+                ><span>Shop the collection</span>
+              </div>
+              <span class="project-view" data-i18n="view">Explore</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>MONO.</h3>
+                <p data-i18n="monoSubtitle">
+                  A small shop with a clear point of view
+                </p>
+              </div>
+              <span data-i18n="shop">Online shop</span>
+            </div>
+          </button>
+        </div>
+        <p class="work-disclaimer" data-i18n="conceptNote">
+          These are concepts, not client projects. Open one to see what I'd
+          build.
+        </p>
+      </section>
+      <section
+        class="services section"
+        id="services"
+        aria-labelledby="services-title"
+      >
+        <div class="section-head">
+          <h2 class="reveal-heading" id="services-title">
+            <span data-i18n="servicesTitle">What I can help with.</span>
+          </h2>
+          <span class="section-spark" aria-hidden="true">✳</span>
+        </div>
+        <div class="service-grid">
+          <article class="service reveal">
+            <span class="service-mark" aria-hidden="true">www.</span>
+            <h3 data-i18n="webTitle">Websites.</h3>
+            <p data-i18n="webDescription">
+              A landing page, a shop, a full web app. I'll help you decide what
+              you actually need, then design and build it.
+            </p>
+            <div class="service-tags">
+              <span data-i18n="webTag1">Landing pages</span
+              ><span data-i18n="webTag2">E-commerce</span
+              ><span data-i18n="webTag3">Web apps</span>
+            </div>
+            <button class="service-cta" data-brief data-type="website">
+              <span data-i18n="discussWebsite">Tell me about the website</span
+              ><span aria-hidden="true">+</span>
+            </button>
+          </article>
+          <article class="service reveal">
+            <span class="service-mark service-mark-bot" aria-hidden="true"
+              >/start</span
+            >
+            <h3 data-i18n="botTitle">Telegram bots.</h3>
+            <p data-i18n="botDescription">
+              Bookings, payments, reminders, member access. The things you'd
+              rather not do by hand, inside a chat people already use.
+            </p>
+            <div class="service-tags">
+              <span data-i18n="botTag1">Booking</span
+              ><span data-i18n="botTag2">Payments</span
+              ><span data-i18n="botTag3">Integrations</span>
+            </div>
+            <button class="service-cta" data-brief data-type="bot">
+              <span data-i18n="discussBot">Tell me about the bot</span
+              ><span aria-hidden="true">+</span>
+            </button>
+          </article>
+        </div>
+      </section>
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="about-art reveal" aria-hidden="true">
+          <span class="about-art-label" data-i18n="artLabel"
+            >Design / develop / repeat</span
+          >
+          <div class="about-monogram">m<span>×</span></div>
+          <div class="about-art-foot">
+            <span data-i18n="artFoot">One person.<br />Both sides.</span
+            ><span class="rotating-star">✳</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="about-label" data-i18n="aboutLabel"
+            >The person behind the screen</span
+          >
+          <h2 class="reveal-heading" id="about-title">
+            <span data-i18n="aboutTitle">A little about me.</span>
+          </h2>
+          <p class="about-lead reveal" data-i18n="aboutLead">
+            I like making things I would want to use.
+          </p>
+          <p class="reveal" data-i18n="aboutDescription">
+            That usually means fewer clicks, a layout that feels right, and a
+            bit of personality. I do the design and development myself, so
+            you'll talk to the person actually building your project.
+          </p>
+          <p class="reveal" data-i18n="aboutMore">
+            Send me a rough idea, a sketch, or a site you like. We can figure
+            out the rest together.
+          </p>
+          <a
+            class="about-contact"
+            href="https://t.me/cylaro"
+            target="_blank"
+            rel="noopener"
+            >@cylaro<span aria-hidden="true">↗</span></a
+          >
+          <div class="stack" aria-label="Technologies">
+            <span>JavaScript</span><span>React</span><span>Python</span
+            ><span>Telegram API</span>
+          </div>
+        </div>
+      </section>
+      <section class="process section" aria-labelledby="process-title">
+        <div class="section-head">
+          <h2 class="reveal-heading" id="process-title">
+            <span data-i18n="processTitle">Here's how it goes.</span>
+          </h2>
+          <p data-i18n="processIntro">
+            You'll know what I'm working on.<br />And what it costs before I
+            start.
+          </p>
+        </div>
+        <div class="process-track">
+          <article class="process-step reveal">
+            <span class="step-number">01</span>
+            <h3 data-i18n="step1Title">We talk.</h3>
+            <p data-i18n="step1">
+              What you're making, who it's for, and what it needs to do. No
+              brief required.
+            </p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">02</span>
+            <h3 data-i18n="step2Title">We agree.</h3>
+            <p data-i18n="step2">
+              I put together the scope, price, and timeline. We settle those
+              before any code.
+            </p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">03</span>
+            <h3 data-i18n="step3Title">I build.</h3>
+            <p data-i18n="step3">
+              You see the work as it takes shape. We test it, try it on a phone,
+              and fix the details.
+            </p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">04</span>
+            <h3 data-i18n="step4Title">It's yours.</h3>
+            <p data-i18n="step4">
+              We go live. You get the code, the access, and an explanation of
+              how everything works.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="faq section" aria-labelledby="faq-title">
+        <h2 class="reveal-heading" id="faq-title">
+          <span data-i18n="faqTitle">Before you ask.</span>
+        </h2>
+        <div class="faq-list">
+          <details class="reveal">
+            <summary>
+              <span data-i18n="question1">How much will it cost?</span
+              ><i aria-hidden="true">+</i>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="answer1">
+                Depends on what we're making. Send me the idea and I'll give you
+                an estimate. The scope and price are agreed before I start.
+              </p>
+            </div>
+          </details>
+          <details class="reveal">
+            <summary>
+              <span data-i18n="question2">Can I come with just an idea?</span
+              ><i aria-hidden="true">+</i>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="answer2">
+                Absolutely. You don't need a finished brief. A few sentences
+                about what you need are enough to start.
+              </p>
+            </div>
+          </details>
+          <details class="reveal">
+            <summary>
+              <span data-i18n="question3">What happens after launch?</span
+              ><i aria-hidden="true">+</i>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="answer3">
+                I hand over the code and access. If you want ongoing support or
+                new features, we can agree on that separately.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section
+        class="contact section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-top">
+          <span data-i18n="contactSmall">Got something in mind?</span
+          ><span class="contact-asterisk" aria-hidden="true">✳</span>
+        </div>
+        <a
+          class="contact-big"
+          href="https://t.me/cylaro"
+          target="_blank"
+          rel="noopener"
+          ><h2 id="contact-title">
+            <span data-i18n="contactTitle">Let's talk.</span>
+          </h2>
+          <span class="contact-arrow" aria-hidden="true">↗</span></a
+        >
+        <div class="contact-bottom">
+          <a
+            class="telegram-handle"
+            href="https://t.me/cylaro"
+            target="_blank"
+            rel="noopener"
+            ><span class="telegram-icon" aria-hidden="true">↗</span>telegram /
+            @cylaro</a
+          ><button class="brief-link" data-brief>
+            <span data-i18n="briefInstead">Or write a short brief</span
+            ><span aria-hidden="true">+</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="logo" href="#" aria-label="Max / Home">m<span>×</span></a
+      ><span>© <span id="year">2026</span> Max</span
+      ><span class="footer-note" data-i18n="footerNote"
+        >Design & development by me.</span
+      ><a href="#" data-i18n="backTop">Back to top</a>
+    </footer>
+    <div class="cursor-label" aria-hidden="true"></div>
+    <dialog id="project-dialog" aria-labelledby="project-title">
+      <button class="dialog-close" aria-label="Close" data-i18n-aria="close">
+        ×
+      </button>
+      <div id="project-detail"></div>
+    </dialog>
+    <dialog id="brief-dialog" aria-labelledby="brief-title">
+      <button class="dialog-close" aria-label="Close" data-i18n-aria="close">
+        ×</button
+      ><span class="dialog-label" data-i18n="briefLabel"
+        >A quick starting point</span
+      >
+      <h2 id="brief-title" data-i18n="briefTitle">What are you thinking?</h2>
+      <p class="dialog-intro" data-i18n="briefIntro">
+        Fill this in, copy the message, then send it to me on Telegram.
+      </p>
+      <form id="brief-form">
+        <fieldset>
+          <legend data-i18n="briefType">I need a</legend>
+          <div class="type-options">
+            <label
+              ><input type="radio" name="type" value="website" checked /><span
+                data-i18n="website"
+                >Website</span
+              ></label
+            ><label
+              ><input type="radio" name="type" value="bot" /><span
+                data-i18n="telegramBot"
+                >Telegram bot</span
+              ></label
+            ><label
+              ><input type="radio" name="type" value="both" /><span
+                data-i18n="both"
+                >Both</span
+              ></label
+            >
+          </div>
+        </fieldset>
+        <label for="brief-idea" data-i18n="ideaLabel">The idea</label
+        ><textarea
+          id="brief-idea"
+          name="idea"
+          rows="4"
+          required
+          maxlength="2000"
+          placeholder="What should it do? Who is it for?"
+          data-i18n-placeholder="ideaPlaceholder"
+        ></textarea
+        ><label for="brief-contact" data-i18n="contactLabel"
+          >Your name or contact</label
+        ><input
+          id="brief-contact"
+          name="contact"
+          required
+          maxlength="150"
+          placeholder="Name, @telegram, or email"
+          data-i18n-placeholder="contactPlaceholder"
+        /><button class="pill-link form-submit" type="submit">
+          <span data-i18n="prepare">Prepare message</span
+          ><span aria-hidden="true">↗</span>
+        </button>
+      </form>
+      <div id="brief-result" hidden>
+        <h3 data-i18n="readyTitle">Ready to send.</h3>
+        <textarea
+          id="brief-message"
+          rows="7"
+          readonly
+          aria-label="Prepared message"
+          data-i18n-aria="preparedMessage"
+        ></textarea
+        ><button class="pill-link" id="copy-brief">
+          <span data-i18n="copyMessage">Copy message</span
+          ><span aria-hidden="true">+</span></button
+        ><a
+          class="telegram-send"
+          href="https://t.me/cylaro"
+          target="_blank"
+          rel="noopener"
+          ><span data-i18n="openTelegram">Open Telegram</span
+          ><span aria-hidden="true">↗</span></a
+        ><button class="brief-reset" data-i18n="editBrief">Edit brief</button>
+        <p class="copy-status" aria-live="polite"></p>
+      </div>
+    </dialog>
+  </body>
+</html>

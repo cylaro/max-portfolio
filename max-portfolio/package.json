@@ -1,0 +1,11 @@
+{
+  "name": "max-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "preview": "node server.mjs",
+    "check": "node --check dist/app.js && node --check dist/content.js && node --check dist/scene.js"
+  }
+}
